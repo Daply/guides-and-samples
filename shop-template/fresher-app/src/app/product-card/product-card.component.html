@@ -1,0 +1,22 @@
+<mat-card class="product-card">
+    <mat-card-header>
+        <mat-card-title>{{ product.name }}</mat-card-title>
+        <button *ngIf="canDelete" style="margin-left: 120px; margin-bottom: 10px;" 
+                mat-button (click)="deleteProduct(product)">
+           <mat-icon>delete</mat-icon>
+        </button>
+    </mat-card-header>
+    <img mat-card-image [src]="product.picture">
+    <mat-card-content>
+        <p>{{ product.description }}</p>
+        <p>Price: {{ product.price }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button [routerLink]="['/products', product.productId]">
+             View
+        </button>
+        <button mat-button (click)="add(product)">
+             Add to cart
+        </button>
+    </mat-card-actions>
+</mat-card>

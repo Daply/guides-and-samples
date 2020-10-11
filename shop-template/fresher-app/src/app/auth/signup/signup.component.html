@@ -1,0 +1,42 @@
+<div class="signup">
+    <h1 class="form-title">Sign up</h1>
+    <form [formGroup]="userForm" (ngSubmit)="signup(userForm)">
+
+        <label for="name">Name</label>
+        <input class="form-control" 
+               name="name" formControlName="name" required/>
+
+        <label for="surname">Surname</label>
+        <input class="form-control"
+               name="surname" formControlName="surname" required/>
+
+        <label for="username">Username</label>
+        <input class="form-control" 
+               name="username" formControlName="username" required/>
+        <div *ngIf="exists"
+             class="cross-validation-error-message alert alert-danger">
+                User with such username alredy exists
+        </div>
+
+        <label for="password">Password</label>
+        <input type="password" class="form-control" 
+               name="password" formControlName="password" required/>
+        <div *ngIf="userForm.errors?.passwordinvalid && (userForm.touched || userForm.dirty)"
+             class="cross-validation-error-message alert alert-danger">
+                Password must have one uppercase letter, one lowercase letter, number and special character
+        </div>
+
+        <label for="password">Repeat password</label>
+        <input type="password" class="form-control" 
+               name="password-repeat" formControlName="password-repeat" required/>
+        <div *ngIf="userForm.errors?.passwordsnotmatch && (userForm.touched || userForm.dirty)" 
+              class="cross-validation-error-message alert alert-danger">
+                Passwords do not match
+        </div>
+
+        <button mat-button [disabled]="!userForm.valid" 
+               type="submit" class="btn btn-success form-submit-button">Submit</button>
+    </form>
+</div>
+
+<button mat-button class="btn btn-success" (click)="signupWithTwitter()">Twitter</button>

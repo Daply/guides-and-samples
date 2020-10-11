@@ -1,0 +1,13 @@
+
+<mat-paginator [length]="allElementsCount"
+                [pageSize]="numberOfItemsPerPage"
+                (page)="nextPage($event)">
+</mat-paginator>
+
+<div class="products" *ngFor="let product of products">
+
+    <app-product-card [product]="product" 
+                      [canDelete]="canDelete"
+                      (productEvent)="productEvent($event)"></app-product-card>
+   
+</div>

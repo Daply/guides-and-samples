@@ -1,0 +1,39 @@
+
+<div *ngIf="cart">
+    <div class="cart-price">
+        <p><b>Total price:</b> {{ cart.totalPrice }}</p>
+        <button mat-button type="submit" (click)="pay()"
+                class="btn btn-success form-submit-button">Pay</button>
+    </div>
+    <div class="products" *ngFor="let productCartQuantity of productCartQuantities; trackBy: trackUpdates">
+
+                        <mat-card class="product-card">
+                            <mat-card-header>
+                                <mat-card-title>{{ productCartQuantity.product.name }}</mat-card-title>
+                                <button style="margin-left: 120px; margin-bottom: 10px;" 
+                                        mat-button (click)="delete(productCartQuantity.product)">
+                                    <mat-icon>delete</mat-icon>
+                                </button>
+                            </mat-card-header>
+                            <img mat-card-image [src]="productCartQuantity.product.picture">
+                            <mat-card-content>
+                                <p>{{ productCartQuantity.product.description }}</p>
+                                <p>Price: {{ productCartQuantity.product.price }}</p>
+                                <p>Quantity: {{ productCartQuantity.quantity }}</p>
+                            </mat-card-content>
+                            <mat-card-actions style="float: inline-end;">
+                                <button mat-button>
+                                     View
+                                </button>
+                                <button mat-button (click)="remove(productCartQuantity.product)">
+                                    -
+                               </button>
+                               <button mat-button (click)="add(productCartQuantity.product)">
+                                    +
+                                </button>
+                            </mat-card-actions>
+                        </mat-card>
+
+    </div>
+
+</div>

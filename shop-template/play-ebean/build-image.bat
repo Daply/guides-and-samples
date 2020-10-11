@@ -1,0 +1,1 @@
+sbt stage && docker build -t "fresher" .

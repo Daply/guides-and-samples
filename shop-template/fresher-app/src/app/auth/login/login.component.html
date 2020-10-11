@@ -1,0 +1,25 @@
+
+
+<div class="login" *ngIf="!authenticated">
+    <h1 class="form-title">Login</h1>
+<form [formGroup]="userForm" (ngSubmit)="login(userForm)">
+
+    <label for="username">Name</label>
+    <input name="username" class="form-control" 
+           formControlName="username" required />
+
+    <label for="password">Password</label>
+    <input name="password" class="form-control" type="password"
+           formControlName="password" required />
+    <div *ngIf="userNotValid"
+         class="cross-validation-error-message alert alert-danger">
+           Username or password not valid
+    </div>
+
+    <button mat-button [disabled]="!userForm.valid" 
+            type="submit" class="btn btn-success form-submit-button">Login</button>
+</form>
+
+<div *ngIf="authenticated">
+    <p>Already logged in</p>
+</div>

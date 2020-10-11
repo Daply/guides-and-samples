@@ -1,0 +1,84 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                                              controllers.HomeController.index
+
+
+# users
+GET     /users                                         controllers.UserController.getAllUsers
+
+GET     /users/:userId                                 controllers.UserController.getUserById(userId: Long)
+
+GET     /user                                          controllers.UserController.getCurrentUser(request: Request)
+
++nocsrf
+POST    /add/user                                      controllers.UserController.addNewUser(request: Request)
+
++nocsrf
+POST    /users/:userId/update                          controllers.UserController.updateUser(userId: Long, request: Request)
+
++nocsrf
+POST    /users/:userId/delete                          controllers.UserController.deleteUser(userId: Long)
+
+
+# user cart
+GET     /cart                                          controllers.CartController.getCurrentCart(request: Request)
+
+GET     /carts/:cartId/products                        controllers.CartController.getCartProducts(cartId: Long)
+
++nocsrf
+POST    /carts/:cartId/add/product/:productId          controllers.CartController.addProductToCart(cartId: Long, productId: Long)
+
++nocsrf
+POST    /carts/:cartId/remove/product/:productId       controllers.CartController.removeProductFromCart(cartId: Long, productId: Long)
+
++nocsrf
+POST    /carts/:cartId/delete/product/:productId       controllers.CartController.deleteProductFromCart(cartId: Long, productId: Long)
+
++nocsrf
+POST    /cart/update                                   controllers.CartController.updateCart(request: Request)
+
+
+# products
+GET     /all/products/count                            controllers.ProductsController.getAllProductsNumber
+
+GET     /all/products/:page/:count                     controllers.ProductsController.getAllProductsByPage(page: Integer, count: Integer)
+
+GET     /all/products                                  controllers.ProductsController.getAllProducts
+
+GET     /products                                      controllers.ProductsController.getProducts(ids: java.util.List[java.lang.Long])
+
+GET     /products/:id                                  controllers.ProductsController.getProductById(id: Long)
+
+GET     /products/search/:query                        controllers.ProductsController.getProductsByQuerySearch(query: String)
+
++nocsrf
+POST    /add/product                                   controllers.ProductsController.addProduct(request: Request)
+
+GET    /delete/product/:productId                     controllers.ProductsController.deleteProduct(productId: Long)
+
+
+# login
++nocsrf
+POST    /login                                         controllers.LoginController.login(request: Request)
+
+POST    /logout                                        controllers.LoginController.logout(request: Request)
+
+GET     /roles                                         controllers.LoginController.getRoles(request: Request)
+
+
+# signup
++nocsrf
+POST    /signup                                        controllers.SignupController.signup(request: Request)
+
+
+# OAuth
+
+GET     /twitter/homeTimeline                          controllers.Twitter.homeTimeline(request: Request)
+GET     /twitter/auth                                  controllers.Twitter.auth(request: Request)
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file                                  controllers.Assets.versioned(path="/public", file: Asset)

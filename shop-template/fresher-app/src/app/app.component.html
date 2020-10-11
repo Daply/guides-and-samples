@@ -1,0 +1,35 @@
+
+<mat-toolbar>
+    <div style="float: left;">
+        <button mat-button (click)="home()">
+            <mat-icon>home</mat-icon>
+        </button>
+        <button mat-button (click)="search()">
+            <mat-icon>search</mat-icon>
+        </button>
+    </div>
+    <div style="float: right;">
+        <button mat-button *ngIf="authenticated" (click)="userInfo()">
+            <mat-icon>person</mat-icon>
+        </button>
+        <button mat-button *ngIf="authenticated && isAdmin" (click)="admin()">
+            <mat-icon>control_point</mat-icon>
+        </button>
+        <button mat-button *ngIf="!authenticated" (click)="login()">
+            Login
+        </button>
+        <button mat-button *ngIf="!authenticated" (click)="signup()">
+            Signup
+        </button>
+        <button mat-button (click)="userCart()">
+            <mat-icon>shopping_cart</mat-icon>
+        </button>
+        <button mat-button *ngIf="authenticated" (click)="logout()">
+            Logout
+        </button>
+    </div>
+</mat-toolbar>
+<!-- <router-outlet><mat-spinner></mat-spinner></router-outlet> -->
+<router-outlet>
+    
+</router-outlet>

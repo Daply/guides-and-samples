@@ -1,0 +1,2 @@
+docker run --name local-mysql -d mysql/mysql-server
+docker run --name local-mysql -e MYSQL_ROOT_PASSWORD -d mysql/mysql-server

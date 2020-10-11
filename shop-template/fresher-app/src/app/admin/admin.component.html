@@ -1,0 +1,42 @@
+<!-- <table class="table" *ngFor="let user of users; trackBy: trackBy">
+ 
+    <tr>
+        <td><a [routerLink]="['/users', user.userId]"> {{ user.username }}</a>
+            <button class="btn btn-primary" 
+                    style="float: right;"
+                    (click)="deleteUser(user)">Delete</button>
+        </td>
+    </tr>
+
+</table>
+<button class="btn btn-primary" routerLink="/add/user">Add new user</button> -->
+
+<div class="add-product">
+    <h1 class="form-title">Add new product</h1>
+    <form [formGroup]="productForm" (ngSubmit)="addNewProduct(productForm)">
+
+        <label for="name">Name</label>
+        <input class="form-control" 
+               name="name" formControlName="name" required/>
+        <div *ngIf="exists"
+               class="cross-validation-error-message alert alert-danger">
+                  User with such username alredy exists
+        </div>
+
+        <label for="description">Description</label>
+        <input class="form-control"
+               name="description" formControlName="description" required/>
+
+        <label for="price">Price</label>
+        <input class="form-control"
+               name="price" formControlName="price" required/>
+
+        <label for="image">Image</label>
+        <!-- <input name="image" type="file" class="custom-file-input" -->
+        <input name="image" type="file"
+               (change)="fileUpload($event)">
+
+        <button mat-button [disabled]="!productForm.valid" 
+               type="submit" class="btn btn-success form-submit-button">Submit</button>
+    </form>
+</div>
