@@ -34,7 +34,7 @@ Building the project
   Run <code><b>sbt build</b></code> to build the project. The build artifacts will be stored in the <code>project/project</code>, <code>project/target</code>, <code>target/</code> directory.
 <br>
 Running the project
-Run <code><b>sbt run</b></code> to run the project. Navigate to http://localhost:9000/.
+Run <code><b>sbt run</b></code> to run the project. Navigate to <code>http://localhost:9000/</code>.
 <br>
 <a href="https://www.playframework.com/documentation/2.8.x/IDE">import play framework project to IDE guide</a>
 </p>
@@ -47,6 +47,6 @@ Building the project
 Run <code><b>ng build</b></code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory. Use the -prod flag for a production build.
 <br>
 Running the project
-Run <code><b>ng serve</b></code> for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run <code><b>ng serve</b></code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The app will automatically reload if you change any of the source files.
 </p>
 <br>
