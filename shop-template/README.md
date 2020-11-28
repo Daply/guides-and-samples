@@ -28,25 +28,25 @@ Simple example of application using Play Framework 2 on server side and Angular 
 
 ## Starting server
 <p>
-The [sbt](https://www.scala-sbt.org/download.html) should be installed globally (or in IDE if project is imported).
+  The <a href="https://www.scala-sbt.org/download.html">sbt</a> should be installed globally (or in IDE if project is imported).
 <br>
 Building the project
-Run `sbt build` to build the project. The build artifacts will be stored in the `project/project`, `project/target`, `target/` directory.
+  Run <code><b>sbt build</b></code> to build the project. The build artifacts will be stored in the <code>project/project</code>, <code>project/target</code>, <code>target/</code> directory.
 <br>
 Running the project
-Run `sbt run` to run the project. Navigate to http://localhost:9000/.
+Run <code><b>sbt run</b></code> to run the project. Navigate to http://localhost:9000/.
 <br>
 <a href="https://www.playframework.com/documentation/2.8.x/IDE">import play framework project to IDE guide</a>
 </p>
 
 ## Starting frontend
 <p>
-The Angular CLI should be installed globally. 
+The <a href="https://cli.angular.io/">Angular CLI</a> should be installed globally. 
 <br>
 Building the project
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the -prod flag for a production build.
+Run <code><b>ng build</b></code> to build the project. The build artifacts will be stored in the `dist/` directory. Use the -prod flag for a production build.
 <br>
 Running the project
-Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run <code><b>ng serve</b></code> for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 </p>
 <br>
