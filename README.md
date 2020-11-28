@@ -27,7 +27,7 @@ All useful examples and guides, applications samples with different technologies
 </li>
 <li>
   <p>
-    <a href="https://github.com/Daply/guides-and-samples/blob/master/shop-template/README.md">Java SE EE Basics</a>
+    <a href="https://github.com/Daply/guides-and-samples/blob/master/shop-template/README.md">Shop template</a>
   </p>
   <p>
 <a href="https://www.oracle.com/java/technologies/javase-downloads.html"><img src="https://img.shields.io/badge/java-orange"></a>
@@ -38,7 +38,7 @@ All useful examples and guides, applications samples with different technologies
 <a href="https://www.mysql.com/"><img src="https://img.shields.io/badge/mysqldatabase-yellow"></a>
 </p>
   <p>
-    Sample shop application 
+    Sample shop application using Play Framework and Angular
   </p>
 </li>
 </ol>
