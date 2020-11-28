@@ -4,12 +4,12 @@ Simple example of application using Play Framework 2 on server side and Angular 
 <br>
 <br>
 <p>
-<img src="https://img.shields.io/badge/java-orange">
-<img src="https://img.shields.io/badge/playframework2-brightgreen">
-<img src="https://img.shields.io/badge/typescript-blue">
-<img src="https://img.shields.io/badge/angular8-red">
-<img src="https://img.shields.io/badge/angularmaterial-blueviolet">
-<img src="https://img.shields.io/badge/mysql-yellow">
+<a href="https://www.oracle.com/java/technologies/javase-downloads.html"><img src="https://img.shields.io/badge/java-orange"></a>
+<a href="https://www.playframework.com/"><img src="https://img.shields.io/badge/playframework2-brightgreen"></a>
+<a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/typescript-blue"></a>
+<a href="https://angular.io/"><img src="https://img.shields.io/badge/angular8-red"></a>
+<a href="https://material.angular.io/"><img src="https://img.shields.io/badge/angularmaterial-blueviolet"></a>
+<a href="https://www.mysql.com/"><img src="https://img.shields.io/badge/mysqldatabase-yellow"></a>
 </p>
 <br>
 
