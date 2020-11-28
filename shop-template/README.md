@@ -1,17 +1,18 @@
-# shop-template
+# Template of shop using Play Framework and Angular
+<br>
+Simple example of application using Play Framework 2 on server side and Angular 8 on frontend side.
+<br>
 
-- Typescript generics
+![Alt Text](https://github.com/Daply/guides-and-samples/blob/master/shop-template/sample%20videos/signup/signup.gif)
 
-- State management
-if in angular -> ngRx, (Redux ??)
 
-- Pagination
+![Alt Text](https://github.com/Daply/guides-and-samples/blob/master/shop-template/sample%20videos/search/search.gif)
 
-- multithreading in Play
 
-- transactions
+![Alt Text](https://github.com/Daply/guides-and-samples/blob/master/shop-template/sample%20videos/view%20product/view_product.gif)
 
-- orphanRemoval
 
-- cron 
-https://www.playframework.com/documentation/2.8.x/ScheduledTasks
+![Alt Text](https://github.com/Daply/guides-and-samples/blob/master/shop-template/sample%20videos/adding%20to%20cart/adding_to_cart.gif)
+
+# Getting started
+<br>
