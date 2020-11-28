@@ -1,5 +1,5 @@
 # guides-and-samples
-All examples of some parts of different applications
+All useful examples and guides, applications samples with different technologies
 
 <ol>
 <li>
