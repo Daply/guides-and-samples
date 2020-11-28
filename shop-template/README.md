@@ -44,7 +44,7 @@ Run <code><b>sbt run</b></code> to run the project. Navigate to http://localhost
 The <a href="https://cli.angular.io/">Angular CLI</a> should be installed globally. 
 <br>
 Building the project
-Run <code><b>ng build</b></code> to build the project. The build artifacts will be stored in the `dist/` directory. Use the -prod flag for a production build.
+Run <code><b>ng build</b></code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory. Use the -prod flag for a production build.
 <br>
 Running the project
 Run <code><b>ng serve</b></code> for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
