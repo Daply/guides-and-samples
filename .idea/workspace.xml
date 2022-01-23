@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf775184-12dc-4f6b-b1e4-6929d0bc7bf1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/shop-template/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/shop-template/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-template/play-ebean/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/shop-template/play-ebean/Dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="cf775184-12dc-4f6b-b1e4-6929d0bc7bf1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,7 +38,11 @@
       <option name="presentableId" value="Default" />
       <updated>1606557326505</updated>
       <workItem from="1606557341493" duration="23000" />
+      <workItem from="1606637184779" duration="389000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
 </project>
